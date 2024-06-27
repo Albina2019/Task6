@@ -20,7 +20,7 @@ public class CarServicelmp implements CarService {
         data.add(new Car("Mercedes", 2024, "yellow"));
 
         List<Car> cars = new ArrayList<>();
-        if (count>5||Objects.isNull(count)){
+        if (Objects.isNull(count)||count>5){
             cars.addAll(data);
         }
         else {

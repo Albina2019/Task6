@@ -10,23 +10,29 @@
 <h1>Cars</h1>
 <table border="1">
     <thead>
-    <tr th:each="car: ${cars}">
-        <th
-            th:text="${car.model}"> model
+    <tr>
+        <th>
+            Model
         </th>
-        <th
-            th:text="${car.year}"> year
+        <th>
+            Year
         </th>
-        <th
-            th:text="${car.color}"> color
+        <th>
+            Color
         </th>
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>
-
-        </td>
+    <tr th:each="car: ${cars}">
+        <th
+                th:text="${car.model}"> model
+        </th>
+        <th
+                th:text="${car.year}"> year
+        </th>
+        <th
+                th:text="${car.color}"> color
+        </th>
     </tr>
     </tbody>
 </table>
